@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CyberShield protection</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <img class="brand-art" src="assets/cybershield-logo.png" alt="CyberShield Detection System">
+      <p id="status" aria-live="polite">Checking protection…</p>
+      <button id="toggle" type="button" disabled>Loading…</button>
+      <button id="settings" class="settings-button" type="button">Backend and account settings</button>
+      <p id="connection" class="note" aria-live="polite">Checking local backend connection…</p>
+      <p class="note">When enabled, website navigations pause for a backend check before the page opens.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

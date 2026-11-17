@@ -1,0 +1,25 @@
+.brand-mark {
+  overflow: hidden;
+  padding: 2px;
+  background: #0b1524;
+}
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.auth-hero-logo {
+  display: block;
+  width: min(230px, 42vw);
+  height: auto;
+  margin: 0 0 -18px;
+  filter: drop-shadow(0 10px 24px #129fff35);
+}
+
+@media (max-width: 760px) {
+  .auth-hero-logo {
+    display: none;
+  }
+}

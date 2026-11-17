@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Security check — CyberShield</title>
+    <link rel="stylesheet" href="warning.css">
+  </head>
+  <body>
+    <main class="panel" aria-labelledby="title">
+      <header class="brand">
+        <img class="shield-logo" src="icons/cybershield-128.png" alt="">
+        <div><strong>CyberShield</strong><small>Smart Security. Safer Browsing.</small></div>
+        <div class="brand-divider"></div>
+        <a href="options.html" target="_blank" rel="noreferrer" aria-label="Extension settings" title="Extension settings">⚙</a>
+      </header>
+
+      <section id="alert" class="alert-card" aria-live="polite">
+        <div class="alert-icon" aria-hidden="true">!</div>
+        <div>
+          <h1 id="title">Checking this website…</h1>
+          <p id="summary">The local backend is analyzing the destination before it opens.</p>
+        </div>
+      </section>
+
+      <section class="details" aria-label="Analysis details">
+        <div class="detail-row"><span class="icon blue" aria-hidden="true">◎</span><span class="detail-label">Website:</span><strong id="site">Loading…</strong></div>
+        <div class="detail-row"><span class="icon green" aria-hidden="true">◆</span><span class="detail-label">Risk level:</span><strong id="risk" class="risk-badge">Checking</strong></div>
+        <div class="detail-row"><span class="icon amber" aria-hidden="true">▲</span><span class="detail-label">Reason:</span><strong id="reason">Waiting for backend analysis</strong></div>
+        <div id="ai-row" class="detail-row ai-row" hidden><span class="icon blue" aria-hidden="true">✦</span><span class="detail-label">Local AI:</span><strong id="ai"></strong></div>
+      </section>
+
+      <p class="disclaimer">URL and domain signals are advisory. This does not inspect page contents or scan downloaded files for viruses. Do not enter sensitive information unless you trust the destination.</p>
+      <p id="error" class="error" role="alert" hidden></p>
+
+      <div class="actions">
+        <button id="block" class="danger-button" type="button">Block website</button>
+        <button id="back" class="back-button" type="button">Go back</button>
+        <button id="continue" class="continue-button" type="button" disabled>Continue anyway</button>
+      </div>
+      <footer><img class="footer-logo" src="icons/cybershield-48.png" alt=""> Protected by CyberShield</footer>
+    </main>
+    <script src="warning.js"></script>
+  </body>
+</html>
